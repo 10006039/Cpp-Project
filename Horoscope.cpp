@@ -1,10 +1,30 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 int main(int argc, const char * argv[])
 {
+//Declarations
 int date = 0;
 int month = 0;
+int menu = 0;
+cout << "\n Menu";
+cout << "\n========";
+cout << "\nEnter 1: to see Chinese Zodiac";
+cout << "\nEnter 2: to Astrology Zodiac";
+cout << "\nEnter 3: to Exit";
+cout << "\n========";
+cout << "\nEnter selection:";
 
+cin >> menu;
+
+do {
+	cout << "1.) Astrology Zodiac" << endl;
+	cin >> menu;
+	
+	if (menu == '1'){
+		cout << "You have chosen to see your Astrology Zodiac!" << endl;
+
+//Sentinal Value
 
 while ((month != -1) || (date != -1)){
 	cout << "Enter Month (1 - 12)\n(-1 to quit)" << endl;
@@ -12,7 +32,9 @@ while ((month != -1) || (date != -1)){
 	cin>>month;
 	cout << "Enter the date:" << endl;
 	cin >> date;
-if ((date >= 20 && date <= 31 && month==1)||(date <= 18 && date >= 1 && month == 2)){
+
+//Decide which zodiac you are
+if ((date >= 20 && date <= 31 && month==1)||(date <= 18 && date >= 1 && month == 2)){	
 	cout << "Your Zodiac Sign is AQUARIUS..." 
 	<< "Aquarius is the eleventh sign of the Zodiac and associated with future and unuasual ideas." << endl;
 	
@@ -65,7 +87,13 @@ else {
 	cout << "You Have entered wrong input" << endl;
 }
 return 0;
+		}
+	}
+	
 }
+
+}
+
 cout << "Enter the Month(Enter -1 to Quit):" << endl;
 cin>>month;
 cout << "Enter the date:" << endl;

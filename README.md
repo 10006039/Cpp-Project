@@ -5,6 +5,6 @@ Jacob Palmer contributed to this project for our C++ class.
 <img src="Screenshot.png"/>
 This shows what our code does to determine what zodiac you are for the astrology zodiac. And how our code determines what menu
 selection to use.
-<img scr="Screenshot1.png"/>
+<img src="Screenshot1.png"/>
 <img src"Screenshot2.png"/>
 These pictures show what our code does to determine which zodiac you are in the chinese zodiac. Using strings and else if/if statments to determine and display whcih zodiac you are.
